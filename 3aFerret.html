@@ -31,6 +31,7 @@
 				<input type="text"  placeholder="Ancho del terreno" ng-model="vAncho" id="Ancho">
 				<input type="text"  placeholder="Radio del terreno" ng-model="vRadio" id="Radio">
 				<input type="text"  placeholder="Alto del terreno" ng-model="vAlto" id="Alto">
+                <input type="text"  placeholder="Profundidad del terreno" ng-model="vProf" id="Prof">				
 				<br>
 				
 			</form>
@@ -42,7 +43,8 @@
 			<button  class="MiBotonUTN" ng-click="Rectangulo(vLargo,vAncho)" >A- Rectangulo de alambre</button>
 			<button  class="MiBotonUTN" ng-click="Circulo(vRadio)" >B- Circulo de alambre</button>
 			<button  class="MiBotonUTN" ng-click="Contrapiso(vLargo,vAncho)" >C- Materiales contrapiso</button>
-			<button  class="MiBotonUTN" ng-click="Perimetro(vLargo,vAncho, vAlto)" >D- Perimetro</button>			
+			<button  class="MiBotonUTN" ng-click="Perimetro(vLargo,vAncho, vAlto, vProf)" >D- Perimetro</button>			
+			<button  class="MiBotonUTN" ng-click="PerimetroVta(vLargo,vAncho, vAlto, vProf)" >E- Alambre para 3 V.al Perimetro </button>			
 
 		</div>
 

@@ -5,6 +5,7 @@ app.controller("controlConstruccion",function($scope){
 	$scope.mensajeRespuesta="sin rta";
 	$scope.vCantCemento = 2;
 	$scope.vCantCal = 3;	
+	$scope.vCantVueltas = 3;	
 
 	$scope.Rectangulo = function(dato1, dato2){
        	alert(parseInt(dato1) * parseInt(dato2) *3);
@@ -22,12 +23,16 @@ app.controller("controlConstruccion",function($scope){
        		 
 	};	
 
-	$scope.Perimetro = function(dato1, dato2, dato3){
-		alert("Perimetro: "+(parseInt(dato1)+parseInt(dato2)+parseInt(dato3))
+	$scope.Perimetro = function(dato1, dato2, dato3, dato4){
+		alert("Perimetro: "+(parseInt(dato1)+parseInt(dato2)+parseInt(dato3)+parseInt(dato4))
 			 );
-       	//alert("Bolsas de Cemento: "+parseInt(dato1) * $scope.vCantCemento);
-       	//alert("Bolsas de Cal: "+parseInt(dato2) * $scope.vCantCal);
        		 
 	};		
+
+	$scope.PerimetroVta = function(dato1, dato2, dato3, dato4){
+		alert("Perimetro: "+((parseInt(dato1)+parseInt(dato2)+parseInt(dato3)+parseInt(dato4))*$scope.vCantVueltas)
+			 );
+       		 
+	};			
 			
 });
